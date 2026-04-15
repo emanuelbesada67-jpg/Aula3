@@ -62,8 +62,34 @@
                 <label for="nome">Nome Completo</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome"
                     title="Digite seu nome completo sem abreviações" class="form-control" required>
+
                 <label for="idade">Idade</label>
                 <input type="number" name="idade" id="idade" class="form-control" onchange="verificarIdade()" required>
+
+                <label for="nome">cep</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu cep"
+                title="Digite seu cep" class="form-control" required>
+                <br>
+                <button type="button" onclick="buscarcep()">buscar</button>
+                 <br>
+                <label for="nome">logradouro</label>
+                <input type="text" name="logradouro" id="logradouro" placeholder="digite seu logradouro"
+                title="Digite seu logradouro" class="form-control" required>
+
+                <label for="nome">Bairro</label>
+                <input type="text" name="Bairro" id="Bairro" placeholder="digite seu Bairro"
+                title="Digite seu Bairro" class="form-control" required>
+
+                <label for="nome">cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="digite sua cidade"
+                title="Digite sua cidade" class="form-control" required>
+
+                <label for="nome">UF</label>
+                <input type="text" name="UF" id="UF" placeholder="digite seu UF"
+                title="Digite seu UF" class="form-control" required>
+
+                <P id="mensagem"></P>
+
             </fieldset>
             <fieldset class="form-control mb-3">
                 <legend>Contato</legend>
