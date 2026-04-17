@@ -1,0 +1,40 @@
+[11:35, 17/04/2026] Emanuel Besada: <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Pagamento</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container mt-4">
+
+<h1>Pagamento 💳</h1>
+
+<form>
+
+<input class="form-control mb-2" placeholder="Nome completo">
+<input class="form-control mb-2" placeholder="Cartão">
+<input class="form-control mb-2" placeholder="Validade">
+<input class="form-control mb-2" placeholder="CVV">
+
+<button type="button" onclick="finalizar()" class="btn btn-success">
+Finalizar Compra
+</button>
+
+</form>
+
+</div>
+
+<script>
+function finalizar(){
+    alert("Compra realizada com sucesso!");
+    localStorage.removeItem("carrinho");
+    window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
